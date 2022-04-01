@@ -1,0 +1,12 @@
+@import url("https://checkmate-ui.netlify.app/css/components.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary-color: #683bc9;
+  --primary-hover-color: #5e39ac;
+  --bg-color: #1b1627;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
