@@ -1,0 +1,74 @@
+@import url("./css/common.css");
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: var(--container-color);
+  height: 100%;
+}
+
+.landing-page {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-text {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.intro-img {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.intro-text .title {
+  font-size: 2rem;
+}
+
+.title span {
+  color: white;
+}
+
+.intro-text .para {
+  margin: 2rem auto;
+  color: white;
+}
+
+.intro-text .para {
+  font-size: 1rem;
+}
+
+.intro-text .login-link {
+  display: block;
+  margin-top: 1rem;
+  color: var(--primary-color-lighter);
+}
+
+@media screen and (max-width: 800px) {
+  .landing-page {
+    flex-direction: column;
+  }
+
+  .intro-text {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .intro-img {
+    width: 80%;
+    order: -1;
+  }
+}
