@@ -5,8 +5,7 @@ html {
 }
 
 body {
-  background-color: var(--bg-color);
-  color: white;
+  background-color: var(--container-color);
   height: 100%;
 }
 
@@ -41,6 +40,7 @@ body {
 
 .intro-text .para {
   margin: 2rem auto;
+  color: white;
 }
 
 .intro-text .para {
@@ -50,7 +50,7 @@ body {
 .intro-text .login-link {
   display: block;
   margin-top: 1rem;
-  color: var(--primary-color);
+  color: var(--primary-color-lighter);
 }
 
 @media screen and (max-width: 800px) {
