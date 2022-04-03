@@ -1,10 +1,12 @@
 const toggleMenu = document.querySelector(".toggle-menu");
 const navHeader = document.querySelector(".nav-header");
+const mainBody = document.querySelector(".main");
 const navLink = document.querySelectorAll(".nav-link");
 const linkCollapse = document.querySelector(".collapse-link");
 
 toggleMenu.addEventListener("click", function () {
   navHeader.classList.toggle("expander");
+  mainBody.classList.toggle("shrink");
 });
 
 navLink.forEach((link) =>
