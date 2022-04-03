@@ -22,7 +22,7 @@
                     </a>
                     <div class="nav-link collapse">
                         <ion-icon name="pencil-outline" class="nav-icon"></ion-icon>
-                        <span class="nav-name">Edit Labels</span>
+                        <span class="nav-name">Labels</span>
 
                         <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
 
@@ -50,7 +50,136 @@
         </nav>
     </header>
 
+    <main class="main">
+
+        <section class="search-filter-section">
+            <div class="search">
+                <ion-icon name="search-outline" class="btn-search"></ion-icon>
+                <input type="text" placeholder="Search" class="input-search">
+            </div>
+            <ion-icon name="filter-outline" class="btn-filter"></ion-icon>
+        </section>
+
+        <div class="filter-container">
+            <div class="filter-header">
+                <h2 class="filter-heading">Sort</h2>
+                <button class="btn btn-solid-primary filter-clear-btn">Clear</button>
+            </div>
+            <div class="filter">
+                <h3 class="filter-type">By Time:</h3>
+                <div class="filter-type-container">
+                    <input type="radio" id="new-to-old" name="time-filter">
+                    <label for="new-to-old">New to Old</label>
+                </div>
+                <div class="filter-type-container">
+                    <input type="radio" id="old-to-new" name="time-filter">
+                    <label for="old-to-new">Old to New</label>
+                </div>
+            </div>
+            <div class="filter">
+                <h3 class="filter-type">By Priority:</h3>
+                <div class="filter-type-container">
+                    <input type="radio" id="high-to-low" name="priority-filter">
+                    <label for="high-to-low">High to Low</label>
+                </div>
+                <div class="filter-type-container">
+                    <input type="radio" id="low-to-high" name="priority-filter">
+                    <label for="low-to-high">Low to High</label>
+                </div>
+            </div>
+        </div>
+
+        <section class="add-note-section">
+            <div class="add-note-container">
+                <input type="text" class="note-title" placeholder="Enter title">
+                <textarea name="note-para" id="note-para" cols="30" rows="10" class="note-content" placeholder="Enter content..."></textarea>
+                <div class="add-note-footer">
+                    <div class="note-select">
+                        <label for="label-select" class="select-label">Label:</label>
+                        <select id="label-select" class="select">
+                        <option value="Label 1">Label 1</option>
+                        <option value="Label 2">Label 2</option>
+                        <option value="Label 3">Label 3</option>
+                        </select>
+                        <label for="priority-select" class="select-label">Priority:</label>
+                        <select id="priority-select" class="select">
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
+                        </select>
+                        <label for="color-select" class="select-label">Color:</label>
+                        <select id="color-select" class="select">
+                            <option value="Green">Green</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Red">Red</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-text-primary close-note-btn">Close</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="notes-display-section">
+            <div class="notes-container">
+                <div class="note">
+                    <button class="archive-btn"><ion-icon name="pin-outline"></ion-icon></button>
+                    <h2>Title</h2>
+                    <h4>Content</h4>
+                    <div class="note-footer">
+                        <p class="note-date">02/04/2020 05:20</p>
+                        <div class="note-action-btns">
+                            <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="pencil-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <button class="archive-btn"><ion-icon name="pin-outline"></ion-icon></button>
+                    <h2>Title</h2>
+                    <h4>Content</h4>
+                    <div class="note-footer">
+                        <p class="note-date">02/04/2020 05:20</p>
+                        <div class="note-action-btns">
+                            <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="pencil-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <button class="archive-btn"><ion-icon name="pin-outline"></ion-icon></button>
+                    <h2>Title</h2>
+                    <h4>Content</h4>
+                    <div class="note-footer">
+                        <p class="note-date">02/04/2020 05:20</p>
+                        <div class="note-action-btns">
+                            <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="pencil-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="note">
+                    <button class="archive-btn"><ion-icon name="pin-outline"></ion-icon></button>
+                    <h2>Title</h2>
+                    <h4>Content</h4>
+                    <div class="note-footer">
+                        <p class="note-date">02/04/2020 05:20</p>
+                        <div class="note-action-btns">
+                            <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                            <button class="action-btn"><ion-icon name="pencil-outline"></ion-icon></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="../js/navbar.js"></script>
+    <script src="./notes.js"></script>
 </body>
 </html>
