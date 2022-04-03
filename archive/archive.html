@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./archive.css">
+    <title>Check Notes</title>
+</head>
+<body>
+    <header class="nav-header">
+        <nav class="navbar">
+            <div>
+                <div class="nav-brand">
+                    <ion-icon name="menu-outline" class="toggle-menu"></ion-icon>
+                    <a href="#" class="brand-name">CheckNote</a>
+                </div>
+                <div class="nav-list">
+                    <a href="../notes/notes.html" class="nav-link">
+                        <ion-icon name="bulb-outline" class="nav-icon"></ion-icon>
+                        <span class="nav-name">Notes</span>
+                    </a>
+                    <div class="nav-link collapse">
+                        <ion-icon name="pencil-outline" class="nav-icon"></ion-icon>
+                        <span class="nav-name">Labels</span>
+
+                        <ion-icon name="chevron-down-outline" class="collapse-link"></ion-icon>
+
+                        <ul class="collapse-menu">
+                            <a href="#" class="collapse-sublink"><ion-icon name="pricetag-outline"></ion-icon> Label 1</a>
+                            <a href="#" class="collapse-sublink"><ion-icon name="pricetag-outline"></ion-icon> Label 2</a>
+                            <a href="#" class="collapse-sublink"><ion-icon name="pricetag-outline"></ion-icon> Label 3</a>
+
+                        </ul>
+                    </div>
+                    <a href="../archive/archive.html" class="nav-link">
+                        <ion-icon name="archive-outline" class="nav-icon"></ion-icon>
+                        <span class="nav-name">Archive</span>
+                    </a>
+                    <a href="../delete/delete.html" class="nav-link">
+                        <ion-icon name="trash-outline" class="nav-icon"></ion-icon>
+                        <span class="nav-name">Trash</span>
+                    </a>
+                </div>
+            </div>
+            <a href="../index.html" class="nav-link">
+                <ion-icon name="log-out-outline" class="nav-icon"></ion-icon>
+                <span class="nav-name">Log Out</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="archive-page">
+        <h2 class="page-title">Archived Notes</h2>
+        <section class="archived-notes-container">
+            <div class="note">
+                <h2>Title</h2>
+                <h4>Content</h4>
+                <div class="note-footer">
+                    <p class="note-date">02/04/2020 05:20</p>
+                    <div class="note-action-btns">
+                        <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                        <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div><div class="note">
+                <h2>Title</h2>
+                <h4>Content</h4>
+                <div class="note-footer">
+                    <p class="note-date">02/04/2020 05:20</p>
+                    <div class="note-action-btns">
+                        <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                        <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div><div class="note">
+                <h2>Title</h2>
+                <h4>Content</h4>
+                <div class="note-footer">
+                    <p class="note-date">02/04/2020 05:20</p>
+                    <div class="note-action-btns">
+                        <button class="action-btn"><ion-icon name="trash-outline"></ion-icon></button>
+                        <button class="action-btn"><ion-icon name="archive-outline"></ion-icon></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="./notes.js"></script>
+</body>
+</html>
