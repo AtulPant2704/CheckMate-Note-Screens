@@ -48,6 +48,17 @@ body {
   font-size: 1rem;
 }
 
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-note-btn {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
 .intro-text .login-btn {
   display: block;
   margin-top: 1rem;
