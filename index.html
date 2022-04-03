@@ -8,16 +8,73 @@
     <title>Check Notes</title>
 </head>
 <body>
+    <section class="backdrop"></section>
+
     <section class="landing-page">
         <div class="intro-text">
             <h1 class="title"><span>Check</span> Notes</h1>
             <p class="para">Take Notes the simple way for free. Forever.</p>
-            <a href="./notes/notes.html"><button class="btn btn-solid-primary signup-btn">Sign Up</button></a>
-            <a href="./notes/notes.html" class="login-link">Already have an account?</a>
+            <div class="btn-container">
+                <button class="btn btn-solid-primary signup-btn">Sign Up</button>
+                <a href="./notes/notes.html"><button class="btn btn-outline-primary add-note-btn">Add Note</button></a>
+            </div>
+            <button class="login-btn">Already have an account?</button>
         </div>
         <div class="intro-img">
             <img class="img-responsive" src="./assets/Work time-amico.webp" alt="intro-note-image">
         </div>
     </section>
+
+    <div class="form-wrapper login-form">
+        <h2 class="form-heading">Login</h2>
+        <form>
+            <div class="form-email">
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="tanay@neog.camp" required />
+            </div>
+            <div class="form-password">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="********" required />
+            </div>
+            <div class="user-history">
+                <input type="checkbox" id="user-save">
+                <label for="user-save">Remember me</label>
+                <a href="#">Forgot your Password?</a>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+        <button class="new-account signup-account">Create New Account <ion-icon name="chevron-forward-outline" class="signup-icon"></ion-icon></button>
+    </div>
+
+    <div class="form-wrapper signup-form">
+        <h2 class="form-heading">Signup</h2>
+        <form>
+            <div class="form-username">
+                <label for="name">Full Name</label>
+                <input id="name" type="text" placeholder="Enter your name" required />
+            </div>
+            <div class="form-email">
+                <label for="email">Email address</label>
+                <input id="email" type="email" placeholder="tanay@neog.camp" required />
+            </div>
+            <div class="form-password">
+                <label for="password">Password</label>
+                <input id="password" type="password" placeholder="********" required />
+            </div>
+            <div class="form-confirm-password">
+                <label for="confirm-password">Confirm Password</label>
+                <input id="confirm-password" type="password" placeholder="********" required />
+            </div>
+            <div class="user-history">
+                <input type="checkbox" id="user-request">
+                <label for="user-request">I accept all Terms & Conditions</label>
+            </div>
+            <button type="submit" class="btn-submit">Create New Account</button>
+        </form>
+        <button class="new-account login-account">Already have an Account <ion-icon name="chevron-forward-outline" class="signup-icon"></ion-icon></button>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>

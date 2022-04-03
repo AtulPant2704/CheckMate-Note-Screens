@@ -1,5 +1,6 @@
 @import url("./css/common.css");
 
+/* Intro page styling */
 html {
   height: 100%;
 }
@@ -47,10 +48,129 @@ body {
   font-size: 1rem;
 }
 
-.intro-text .login-link {
+.btn-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.add-note-btn {
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+.add-note-btn:hover {
+  background-color: transparent;
+}
+
+.intro-text .login-btn {
   display: block;
   margin-top: 1rem;
   color: var(--primary-color-lighter);
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* Form Styling */
+.backdrop {
+  display: none;
+}
+
+.backdrop-active {
+  position: fixed;
+  display: block;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+}
+
+.form-wrapper {
+  background-color: var(--container-color);
+  width: 20rem;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-heading {
+  color: var(--title-color);
+  text-align: center;
+}
+
+.form-wrapper label {
+  color: var(--text-color);
+}
+
+.form-wrapper .btn-submit {
+  background-color: var(--primary-color);
+}
+
+.form-wrapper .btn-submit:hover {
+  background-color: var(--primary-hover-color);
+}
+
+.form-wrapper .new-account {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: auto;
+}
+
+.new-account .signup-icon {
+  margin-left: 5px;
+  font-size: 1.25rem;
+}
+
+.login-form {
+  position: fixed;
+  display: none;
+}
+
+.login-form-active {
+  display: block;
+  z-index: 2;
+}
+
+.signup-form {
+  position: fixed;
+  display: none;
+}
+
+.signup-form-active {
+  display: block;
+  z-index: 2;
+}
+
+.form-username label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-confirm-password label {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-username input,
+.form-confirm-password input {
+  width: 100%;
+  border: 1px solid var(--default-color);
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 800px) {
