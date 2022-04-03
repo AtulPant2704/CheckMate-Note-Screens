@@ -6,16 +6,6 @@
   width: calc(100% - 150px);
 }
 
-.shrink {
-  width: calc(100% - 15rem);
-  margin-left: 15rem;
-  margin-right: 2rem;
-}
-
-body {
-  background-color: var(--container-color);
-}
-
 /* Search and Filter Section Styling */
 .search-filter-section {
   display: flex;
