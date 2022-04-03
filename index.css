@@ -59,6 +59,10 @@ body {
   border-color: white;
 }
 
+.add-note-btn:hover {
+  background-color: transparent;
+}
+
 .intro-text .login-btn {
   display: block;
   margin-top: 1rem;
