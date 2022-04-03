@@ -156,13 +156,6 @@
   grid-gap: 1rem;
 }
 
-@media screen and (max-width: 900px) {
-  .shrink {
-    width: calc(100% - 150px);
-    margin: 0;
-  }
-}
-
 /* Responsiveness Styling */
 @media screen and (max-width: 700px) {
   .main {
