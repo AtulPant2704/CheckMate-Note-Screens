@@ -22,6 +22,7 @@ Check Notes is a notes app to store notes and add labels, colors and filters to 
 
 - HTML
 - CSS
+- Javascript
 - [Checkmate UI](https://checkmate-ui.netlify.app/)
 - Ionicons
 
