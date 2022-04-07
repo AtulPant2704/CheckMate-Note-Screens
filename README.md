@@ -1,4 +1,4 @@
-# CheckMate Shop
+# Check Note
 
 Check Notes is a notes app to store notes and add labels, colors and filters to them for easy access. User can create notes with different styles and archive or delete them based upon usage. It makes tracking your tasks really easy.
 
